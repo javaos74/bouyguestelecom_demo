@@ -1,0 +1,382 @@
+<Activity mc:Ignorable="sap sap2010" x:Class="ExtractItems" mva:VisualBasic.Settings="{x:Null}" sap:VirtualizedContainerService.HintSize="622,4682" sap2010:WorkflowViewState.IdRef="ExtractItems_1" xmlns="http://schemas.microsoft.com/netfx/2009/xaml/activities" xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" xmlns:mva="clr-namespace:Microsoft.VisualBasic.Activities;assembly=System.Activities" xmlns:sap="http://schemas.microsoft.com/netfx/2009/xaml/activities/presentation" xmlns:sap2010="http://schemas.microsoft.com/netfx/2010/xaml/activities/presentation" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=mscorlib" xmlns:sd="clr-namespace:System.Data;assembly=System.Data" xmlns:ui="http://schemas.uipath.com/workflow/activities" xmlns:uix="http://schemas.uipath.com/workflow/activities/uix" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <TextExpression.NamespacesForImplementation>
+    <scg:List x:TypeArguments="x:String" Capacity="68">
+      <x:String>System.Activities</x:String>
+      <x:String>System.Activities.Statements</x:String>
+      <x:String>System.Activities.Expressions</x:String>
+      <x:String>System.Activities.Validation</x:String>
+      <x:String>System.Activities.XamlIntegration</x:String>
+      <x:String>Microsoft.VisualBasic</x:String>
+      <x:String>Microsoft.VisualBasic.Activities</x:String>
+      <x:String>System</x:String>
+      <x:String>System.Collections</x:String>
+      <x:String>System.Collections.Generic</x:String>
+      <x:String>System.Data</x:String>
+      <x:String>System.Diagnostics</x:String>
+      <x:String>System.Drawing</x:String>
+      <x:String>System.IO</x:String>
+      <x:String>System.Linq</x:String>
+      <x:String>System.Net.Mail</x:String>
+      <x:String>System.Xml</x:String>
+      <x:String>System.Xml.Linq</x:String>
+      <x:String>UiPath.Core</x:String>
+      <x:String>UiPath.Core.Activities</x:String>
+      <x:String>System.Windows.Markup</x:String>
+      <x:String>UiPath.UIAutomationNext.Enums</x:String>
+      <x:String>System.Collections.ObjectModel</x:String>
+      <x:String>UiPath.UIAutomationNext.Activities</x:String>
+      <x:String>System.Activities.DynamicUpdate</x:String>
+      <x:String>UiPath.Platform.ObjectLibrary</x:String>
+      <x:String>UiPath.Shared.Activities</x:String>
+      <x:String>UiPath.UIAutomationNext.Models.ExtractData</x:String>
+      <x:String>System.ComponentModel</x:String>
+      <x:String>System.Runtime.Serialization</x:String>
+      <x:String>System.Xml.Serialization</x:String>
+      <x:String>System.Reflection</x:String>
+      <x:String>System.Runtime.InteropServices</x:String>
+      <x:String>UiPath.UIAutomationNext.Contracts</x:String>
+      <x:String>UiPath.Excel</x:String>
+      <x:String>UiPath.Excel.Activities</x:String>
+      <x:String>UiPath.DataTableUtilities</x:String>
+    </scg:List>
+  </TextExpression.NamespacesForImplementation>
+  <TextExpression.ReferencesForImplementation>
+    <scg:List x:TypeArguments="AssemblyReference" Capacity="24">
+      <AssemblyReference>System.Activities</AssemblyReference>
+      <AssemblyReference>Microsoft.VisualBasic</AssemblyReference>
+      <AssemblyReference>mscorlib</AssemblyReference>
+      <AssemblyReference>System.Data</AssemblyReference>
+      <AssemblyReference>System.Data.DataSetExtensions</AssemblyReference>
+      <AssemblyReference>System</AssemblyReference>
+      <AssemblyReference>System.Drawing</AssemblyReference>
+      <AssemblyReference>System.Core</AssemblyReference>
+      <AssemblyReference>System.Xml</AssemblyReference>
+      <AssemblyReference>System.Xml.Linq</AssemblyReference>
+      <AssemblyReference>PresentationFramework</AssemblyReference>
+      <AssemblyReference>WindowsBase</AssemblyReference>
+      <AssemblyReference>PresentationCore</AssemblyReference>
+      <AssemblyReference>System.Xaml</AssemblyReference>
+      <AssemblyReference>UiPath.System.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.UiAutomation.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.UIAutomationNext</AssemblyReference>
+      <AssemblyReference>UiPath.UIAutomationNext.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.Platform</AssemblyReference>
+      <AssemblyReference>UiPath.Excel.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.Mail.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.OCR.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.UIAutomationCore</AssemblyReference>
+      <AssemblyReference>System.Runtime.Serialization</AssemblyReference>
+    </scg:List>
+  </TextExpression.ReferencesForImplementation>
+  <Sequence DisplayName="ExtractItems" sap:VirtualizedContainerService.HintSize="632,4517" sap2010:WorkflowViewState.IdRef="Sequence_1">
+    <sap:WorkflowViewStateService.ViewState>
+      <scg:Dictionary x:TypeArguments="x:String, x:Object">
+        <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+      </scg:Dictionary>
+    </sap:WorkflowViewStateService.ViewState>
+    <uix:NApplicationCard AttachMode="ByInstance" DisplayName="Use Browser Chrome: Téléphones mobiles et Smartphones désimlockés" sap:VirtualizedContainerService.HintSize="590,4425" sap2010:WorkflowViewState.IdRef="NApplicationCard_1" InteractionMode="Simulate" Version="V1">
+      <uix:NApplicationCard.Body>
+        <ActivityAction x:TypeArguments="x:Object">
+          <ActivityAction.Argument>
+            <DelegateInArgument x:TypeArguments="x:Object" Name="WSSessionData" />
+          </ActivityAction.Argument>
+          <Sequence DisplayName="실행" sap:VirtualizedContainerService.HintSize="556,4208" sap2010:WorkflowViewState.IdRef="Sequence_2">
+            <Sequence.Variables>
+              <Variable x:TypeArguments="scg:IEnumerable(ui:UiElement)" Name="device_elms" />
+              <Variable x:TypeArguments="sd:DataTable" Name="phone_table" />
+              <Variable x:TypeArguments="x:Int32" Name="last_model_count">
+                <Variable.Default>
+                  <Literal x:TypeArguments="x:Int32" />
+                </Variable.Default>
+              </Variable>
+              <Variable x:TypeArguments="x:Int32" Name="cur_model_count" />
+            </Sequence.Variables>
+            <sap:WorkflowViewStateService.ViewState>
+              <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+              </scg:Dictionary>
+            </sap:WorkflowViewStateService.ViewState>
+            <ui:FindChildren Children="[device_elms]" DisplayName="Find Children 'DIV'" Filter="&lt;webctrl tag='BTL-DEVICE' /&gt;" sap:VirtualizedContainerService.HintSize="514,106" sap2010:WorkflowViewState.IdRef="FindChildren_3" Scope="FIND_DESCENDANTS">
+              <ui:FindChildren.Target>
+                <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" Id="a7bd4aa1-7b14-4647-a354-f94858d38374" InformativeScreenshot="edc995eb7c08ff853c6b7beb64dfe793" Selector="&lt;webctrl class='column is-marginless products-list-wrapper' tag='DIV' /&gt;" WaitForReady="COMPLETE">
+                  <ui:Target.TimeoutMS>
+                    <InArgument x:TypeArguments="x:Int32" />
+                  </ui:Target.TimeoutMS>
+                </ui:Target>
+              </ui:FindChildren.Target>
+            </ui:FindChildren>
+            <Assign sap:VirtualizedContainerService.HintSize="514,61" sap2010:WorkflowViewState.IdRef="Assign_6">
+              <Assign.To>
+                <OutArgument x:TypeArguments="x:Int32">[cur_model_count]</OutArgument>
+              </Assign.To>
+              <Assign.Value>
+                <InArgument x:TypeArguments="x:Int32">[device_elms.Count]</InArgument>
+              </Assign.Value>
+            </Assign>
+            <ui:InterruptibleDoWhile sap2010:Annotation.AnnotationText="전체 페이지 로딩되도록 만들어 두고 시작함 " DisplayName="Do While" sap:VirtualizedContainerService.HintSize="514,786" sap2010:WorkflowViewState.IdRef="InterruptibleDoWhile_1">
+              <ui:InterruptibleDoWhile.Body>
+                <Sequence DisplayName="Body" sap:VirtualizedContainerService.HintSize="376,588" sap2010:WorkflowViewState.IdRef="Sequence_5">
+                  <sap:WorkflowViewStateService.ViewState>
+                    <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                      <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                    </scg:Dictionary>
+                  </sap:WorkflowViewStateService.ViewState>
+                  <Assign sap:VirtualizedContainerService.HintSize="334,60" sap2010:WorkflowViewState.IdRef="Assign_8">
+                    <Assign.To>
+                      <OutArgument x:TypeArguments="x:Int32">[last_model_count]</OutArgument>
+                    </Assign.To>
+                    <Assign.Value>
+                      <InArgument x:TypeArguments="x:Int32">[cur_model_count]</InArgument>
+                    </Assign.Value>
+                  </Assign>
+                  <uix:NKeyboardShortcuts DelayBetweenShortcuts="{x:Null}" ActivateBefore="True" ClickBeforeMode="None" DisplayName="Keyboard Shortcuts" sap:VirtualizedContainerService.HintSize="334,150" sap2010:WorkflowViewState.IdRef="NKeyboardShortcuts_1" Shortcuts="[d(hk)][k(pgdn)][u(hk)]" />
+                  <ui:FindChildren Children="[device_elms]" DisplayName="Find Children 'DIV'" Filter="&lt;webctrl tag='BTL-DEVICE' /&gt;" sap:VirtualizedContainerService.HintSize="334,106" sap2010:WorkflowViewState.IdRef="FindChildren_4" Scope="FIND_DESCENDANTS">
+                    <ui:FindChildren.Target>
+                      <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" Id="a7bd4aa1-7b14-4647-a354-f94858d38374" InformativeScreenshot="edc995eb7c08ff853c6b7beb64dfe793" Selector="&lt;webctrl class='column is-marginless products-list-wrapper' tag='DIV' /&gt;" WaitForReady="COMPLETE">
+                        <ui:Target.TimeoutMS>
+                          <InArgument x:TypeArguments="x:Int32" />
+                        </ui:Target.TimeoutMS>
+                      </ui:Target>
+                    </ui:FindChildren.Target>
+                  </ui:FindChildren>
+                  <Assign sap:VirtualizedContainerService.HintSize="334,60" sap2010:WorkflowViewState.IdRef="Assign_7">
+                    <Assign.To>
+                      <OutArgument x:TypeArguments="x:Int32">[cur_model_count]</OutArgument>
+                    </Assign.To>
+                    <Assign.Value>
+                      <InArgument x:TypeArguments="x:Int32">[device_elms.Count]</InArgument>
+                    </Assign.Value>
+                  </Assign>
+                </Sequence>
+              </ui:InterruptibleDoWhile.Body>
+              <ui:InterruptibleDoWhile.Condition>
+                <mva:VisualBasicValue x:TypeArguments="x:Boolean" ExpressionText="last_model_count &lt;&gt; cur_model_count" sap2010:WorkflowViewState.IdRef="VisualBasicValue`1_1" />
+              </ui:InterruptibleDoWhile.Condition>
+              <sap:WorkflowViewStateService.ViewState>
+                <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                  <x:Boolean x:Key="IsAnnotationDocked">True</x:Boolean>
+                </scg:Dictionary>
+              </sap:WorkflowViewStateService.ViewState>
+            </ui:InterruptibleDoWhile>
+            <ui:BuildDataTable DataTable="[phone_table]" DisplayName="Build Data Table" sap:VirtualizedContainerService.HintSize="514,59" sap2010:WorkflowViewState.IdRef="BuildDataTable_1" TableInfo="&lt;NewDataSet&gt;&#xD;&#xA;  &lt;xs:schema id=&quot;NewDataSet&quot; xmlns=&quot;&quot; xmlns:xs=&quot;http://www.w3.org/2001/XMLSchema&quot; xmlns:msdata=&quot;urn:schemas-microsoft-com:xml-msdata&quot;&gt;&#xD;&#xA;    &lt;xs:element name=&quot;NewDataSet&quot; msdata:IsDataSet=&quot;true&quot; msdata:MainDataTable=&quot;TableName&quot; msdata:UseCurrentLocale=&quot;true&quot;&gt;&#xD;&#xA;      &lt;xs:complexType&gt;&#xD;&#xA;        &lt;xs:choice minOccurs=&quot;0&quot; maxOccurs=&quot;unbounded&quot;&gt;&#xD;&#xA;          &lt;xs:element name=&quot;TableName&quot;&gt;&#xD;&#xA;            &lt;xs:complexType&gt;&#xD;&#xA;              &lt;xs:sequence&gt;&#xD;&#xA;                &lt;xs:element name=&quot;name&quot; msdata:Caption=&quot;&quot; minOccurs=&quot;0&quot;&gt;&#xD;&#xA;                  &lt;xs:simpleType&gt;&#xD;&#xA;                    &lt;xs:restriction base=&quot;xs:string&quot;&gt;&#xD;&#xA;                      &lt;xs:maxLength value=&quot;100&quot; /&gt;&#xD;&#xA;                    &lt;/xs:restriction&gt;&#xD;&#xA;                  &lt;/xs:simpleType&gt;&#xD;&#xA;                &lt;/xs:element&gt;&#xD;&#xA;                &lt;xs:element name=&quot;detail_url&quot; msdata:Caption=&quot;&quot; type=&quot;xs:string&quot; minOccurs=&quot;0&quot; /&gt;&#xD;&#xA;              &lt;/xs:sequence&gt;&#xD;&#xA;            &lt;/xs:complexType&gt;&#xD;&#xA;          &lt;/xs:element&gt;&#xD;&#xA;        &lt;/xs:choice&gt;&#xD;&#xA;      &lt;/xs:complexType&gt;&#xD;&#xA;    &lt;/xs:element&gt;&#xD;&#xA;  &lt;/xs:schema&gt;&#xD;&#xA;&lt;/NewDataSet&gt;" />
+            <ui:FindChildren Children="[device_elms]" DisplayName="Find Children 'DIV'" Filter="&lt;webctrl tag='BTL-DEVICE' /&gt;" sap:VirtualizedContainerService.HintSize="514,106" sap2010:WorkflowViewState.IdRef="FindChildren_1" Scope="FIND_DESCENDANTS">
+              <ui:FindChildren.Target>
+                <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" Id="a7bd4aa1-7b14-4647-a354-f94858d38374" InformativeScreenshot="edc995eb7c08ff853c6b7beb64dfe793" Selector="&lt;webctrl class='column is-marginless products-list-wrapper' tag='DIV' /&gt;">
+                  <ui:Target.TimeoutMS>
+                    <InArgument x:TypeArguments="x:Int32" />
+                  </ui:Target.TimeoutMS>
+                  <ui:Target.WaitForReady>
+                    <InArgument x:TypeArguments="ui:WaitForReady" />
+                  </ui:Target.WaitForReady>
+                </ui:Target>
+              </ui:FindChildren.Target>
+            </ui:FindChildren>
+            <ui:LogMessage DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="514,93" sap2010:WorkflowViewState.IdRef="LogMessage_1" Level="Info" Message="[string.Format(&quot;전체 개수는 {0}&quot;, device_elms.Count)]" />
+            <ui:ForEach x:TypeArguments="ui:UiElement" CurrentIndex="{x:Null}" DisplayName="For Each" sap:VirtualizedContainerService.HintSize="514,1548" sap2010:WorkflowViewState.IdRef="ForEach`1_1" Values="[device_elms]">
+              <ui:ForEach.Body>
+                <ActivityAction x:TypeArguments="ui:UiElement">
+                  <ActivityAction.Argument>
+                    <DelegateInArgument x:TypeArguments="ui:UiElement" Name="elm" />
+                  </ActivityAction.Argument>
+                  <Sequence DisplayName="본문" sap:VirtualizedContainerService.HintSize="478,1412" sap2010:WorkflowViewState.IdRef="Sequence_3">
+                    <Sequence.Variables>
+                      <Variable x:TypeArguments="scg:IEnumerable(ui:UiElement)" Name="link_elms" />
+                      <Variable x:TypeArguments="ui:UiElement" Name="link_elm" />
+                      <Variable x:TypeArguments="x:String" Name="link_url" />
+                      <Variable x:TypeArguments="x:String" Name="phone_name" />
+                      <Variable x:TypeArguments="sd:DataRow" Name="new_item" />
+                    </Sequence.Variables>
+                    <sap:WorkflowViewStateService.ViewState>
+                      <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                        <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                      </scg:Dictionary>
+                    </sap:WorkflowViewStateService.ViewState>
+                    <ui:FindChildren Children="[link_elms]" DisplayName="Find Children" Filter="&lt;webctrl tag='A' /&gt;" sap:VirtualizedContainerService.HintSize="436,68" sap2010:WorkflowViewState.IdRef="FindChildren_2" Scope="FIND_DESCENDANTS">
+                      <ui:FindChildren.Target>
+                        <ui:Target ClippingRegion="{x:Null}" Selector="{x:Null}" Element="[elm]" Id="96871d6f-d3cd-4622-b357-e2529d77afa0">
+                          <ui:Target.TimeoutMS>
+                            <InArgument x:TypeArguments="x:Int32" />
+                          </ui:Target.TimeoutMS>
+                          <ui:Target.WaitForReady>
+                            <InArgument x:TypeArguments="ui:WaitForReady" />
+                          </ui:Target.WaitForReady>
+                        </ui:Target>
+                      </ui:FindChildren.Target>
+                    </ui:FindChildren>
+                    <Assign sap:VirtualizedContainerService.HintSize="436,61" sap2010:WorkflowViewState.IdRef="Assign_1">
+                      <Assign.To>
+                        <OutArgument x:TypeArguments="ui:UiElement">[link_elm]</OutArgument>
+                      </Assign.To>
+                      <Assign.Value>
+                        <InArgument x:TypeArguments="ui:UiElement">[link_elms.ElementAt(0)]</InArgument>
+                      </Assign.Value>
+                    </Assign>
+                    <uix:NClick sap2010:Annotation.AnnotationText="그냥 테스트용으로 클릭 한 것임" ClickType="Single" DisplayName="Click" sap:VirtualizedContainerService.HintSize="436,148" sap2010:WorkflowViewState.IdRef="NClick_1" InUiElement="[link_elm]" KeyModifiers="None" MouseButton="Right">
+                      <sap:WorkflowViewStateService.ViewState>
+                        <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                          <x:Boolean x:Key="IsAnnotationDocked">True</x:Boolean>
+                        </scg:Dictionary>
+                      </sap:WorkflowViewStateService.ViewState>
+                    </uix:NClick>
+                    <ui:GetAttribute ContinueOnError="{x:Null}" sap2010:Annotation.AnnotationText="단말 이름 추출 " Attribute="innerText" DisplayName="Get Attribute" sap:VirtualizedContainerService.HintSize="436,127" sap2010:WorkflowViewState.IdRef="GetAttribute_2">
+                      <ui:GetAttribute.Result>
+                        <OutArgument x:TypeArguments="x:String">[phone_name]</OutArgument>
+                      </ui:GetAttribute.Result>
+                      <ui:GetAttribute.Target>
+                        <ui:Target ClippingRegion="{x:Null}" Selector="{x:Null}" Element="[link_elm]" Id="90adac1f-b7f0-4cc8-ad37-e50da2172279">
+                          <ui:Target.TimeoutMS>
+                            <InArgument x:TypeArguments="x:Int32" />
+                          </ui:Target.TimeoutMS>
+                          <ui:Target.WaitForReady>
+                            <InArgument x:TypeArguments="ui:WaitForReady" />
+                          </ui:Target.WaitForReady>
+                        </ui:Target>
+                      </ui:GetAttribute.Target>
+                      <sap:WorkflowViewStateService.ViewState>
+                        <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                          <x:Boolean x:Key="IsAnnotationDocked">True</x:Boolean>
+                        </scg:Dictionary>
+                      </sap:WorkflowViewStateService.ViewState>
+                    </ui:GetAttribute>
+                    <ui:GetAttribute ContinueOnError="{x:Null}" sap2010:Annotation.AnnotationText="실제 링크 추출" Attribute="href" DisplayName="Get Attribute" sap:VirtualizedContainerService.HintSize="436,127" sap2010:WorkflowViewState.IdRef="GetAttribute_1">
+                      <ui:GetAttribute.Result>
+                        <OutArgument x:TypeArguments="x:String">[link_url]</OutArgument>
+                      </ui:GetAttribute.Result>
+                      <ui:GetAttribute.Target>
+                        <ui:Target ClippingRegion="{x:Null}" Selector="{x:Null}" Element="[link_elm]" Id="b2fecac9-f711-4807-b4c5-ae17bbf1527f">
+                          <ui:Target.TimeoutMS>
+                            <InArgument x:TypeArguments="x:Int32" />
+                          </ui:Target.TimeoutMS>
+                          <ui:Target.WaitForReady>
+                            <InArgument x:TypeArguments="ui:WaitForReady" />
+                          </ui:Target.WaitForReady>
+                        </ui:Target>
+                      </ui:GetAttribute.Target>
+                      <sap:WorkflowViewStateService.ViewState>
+                        <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                          <x:Boolean x:Key="IsAnnotationDocked">True</x:Boolean>
+                        </scg:Dictionary>
+                      </sap:WorkflowViewStateService.ViewState>
+                    </ui:GetAttribute>
+                    <ui:CommentOut DisplayName="Comment Out" sap:VirtualizedContainerService.HintSize="436,263" sap2010:WorkflowViewState.IdRef="CommentOut_2">
+                      <ui:CommentOut.Body>
+                        <Sequence DisplayName="무시된 액티비티" sap:VirtualizedContainerService.HintSize="376,185" sap2010:WorkflowViewState.IdRef="Sequence_6">
+                          <sap:WorkflowViewStateService.ViewState>
+                            <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                              <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                            </scg:Dictionary>
+                          </sap:WorkflowViewStateService.ViewState>
+                          <ui:LogMessage DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="334,93" sap2010:WorkflowViewState.IdRef="LogMessage_2" Level="Info" Message="[string.Format(&quot;{0} 의 링크는 {1}&quot;, phone_name, link_url)]" />
+                        </Sequence>
+                      </ui:CommentOut.Body>
+                    </ui:CommentOut>
+                    <ui:MultipleAssign sap2010:Annotation.AnnotationText="URL링크 가져올때 전체 URL로 만들어 줌 " DisplayName="Multiple Assign" sap:VirtualizedContainerService.HintSize="436,191" sap2010:WorkflowViewState.IdRef="MultipleAssign_1">
+                      <ui:MultipleAssign.AssignOperations>
+                        <scg:List x:TypeArguments="ui:AssignOperation" Capacity="4">
+                          <ui:AssignOperation sap2010:WorkflowViewState.IdRef="AssignOperation_1">
+                            <ui:AssignOperation.To>
+                              <OutArgument x:TypeArguments="sd:DataRow">[new_item]</OutArgument>
+                            </ui:AssignOperation.To>
+                            <ui:AssignOperation.Value>
+                              <InArgument x:TypeArguments="sd:DataRow">[phone_table.NewRow]</InArgument>
+                            </ui:AssignOperation.Value>
+                          </ui:AssignOperation>
+                          <ui:AssignOperation sap2010:WorkflowViewState.IdRef="AssignOperation_2">
+                            <ui:AssignOperation.To>
+                              <OutArgument x:TypeArguments="x:Object">[new_item("name")]</OutArgument>
+                            </ui:AssignOperation.To>
+                            <ui:AssignOperation.Value>
+                              <InArgument x:TypeArguments="x:Object">[phone_name]</InArgument>
+                            </ui:AssignOperation.Value>
+                          </ui:AssignOperation>
+                          <ui:AssignOperation sap2010:WorkflowViewState.IdRef="AssignOperation_3">
+                            <ui:AssignOperation.To>
+                              <OutArgument x:TypeArguments="x:Object">[new_item("detail_url")]</OutArgument>
+                            </ui:AssignOperation.To>
+                            <ui:AssignOperation.Value>
+                              <InArgument x:TypeArguments="x:Object">["https://www.bouyguestelecom.fr"+link_url]</InArgument>
+                            </ui:AssignOperation.Value>
+                          </ui:AssignOperation>
+                        </scg:List>
+                      </ui:MultipleAssign.AssignOperations>
+                      <sap:WorkflowViewStateService.ViewState>
+                        <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                          <x:Boolean x:Key="IsAnnotationDocked">True</x:Boolean>
+                        </scg:Dictionary>
+                      </sap:WorkflowViewStateService.ViewState>
+                    </ui:MultipleAssign>
+                    <ui:AddDataRow ArrayRow="{x:Null}" sap2010:Annotation.AnnotationText="한 개 모델 이름과 링크 추가 " DataRow="[new_item]" DataTable="[phone_table]" DisplayName="Add Data Row" sap:VirtualizedContainerService.HintSize="436,53" sap2010:WorkflowViewState.IdRef="AddDataRow_1">
+                      <sap:WorkflowViewStateService.ViewState>
+                        <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                          <x:Boolean x:Key="IsAnnotationDocked">True</x:Boolean>
+                        </scg:Dictionary>
+                      </sap:WorkflowViewStateService.ViewState>
+                    </ui:AddDataRow>
+                  </Sequence>
+                </ActivityAction>
+              </ui:ForEach.Body>
+              <sap:WorkflowViewStateService.ViewState>
+                <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                  <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                  <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                </scg:Dictionary>
+              </sap:WorkflowViewStateService.ViewState>
+            </ui:ForEach>
+            <ui:WriteRange AddHeaders="True" DataTable="[phone_table]" DisplayName="Write Range" sap:VirtualizedContainerService.HintSize="514,115" sap2010:WorkflowViewState.IdRef="WriteRange_1" SheetName="findchildren" StartingCell="A1" WorkbookPath="bouyguestelecom.xlsx" />
+            <uix:NApplicationCard AttachMode="ByInstance" DisplayName="Use Browser Chrome: Téléphones mobiles et Smartphones désimlockés" sap:VirtualizedContainerService.HintSize="514,921" sap2010:WorkflowViewState.IdRef="NApplicationCard_2" InteractionMode="Simulate" Version="V1">
+              <uix:NApplicationCard.Body>
+                <ActivityAction x:TypeArguments="x:Object">
+                  <ActivityAction.Argument>
+                    <DelegateInArgument x:TypeArguments="x:Object" Name="WSSessionData" />
+                  </ActivityAction.Argument>
+                  <Sequence DisplayName="실행" sap:VirtualizedContainerService.HintSize="452,704" sap2010:WorkflowViewState.IdRef="Sequence_8">
+                    <sap:WorkflowViewStateService.ViewState>
+                      <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                        <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                      </scg:Dictionary>
+                    </sap:WorkflowViewStateService.ViewState>
+                    <ui:ForEachRow ColumnNames="{x:Null}" CurrentIndex="{x:Null}" DataTable="[phone_table]" DisplayName="For Each Row in Data Table" sap:VirtualizedContainerService.HintSize="410,610" sap2010:WorkflowViewState.IdRef="ForEachRow_1">
+                      <ui:ForEachRow.Body>
+                        <ActivityAction x:TypeArguments="sd:DataRow">
+                          <ActivityAction.Argument>
+                            <DelegateInArgument x:TypeArguments="sd:DataRow" Name="CurrentRow" />
+                          </ActivityAction.Argument>
+                          <Sequence DisplayName="Body" sap:VirtualizedContainerService.HintSize="376,488" sap2010:WorkflowViewState.IdRef="Sequence_7">
+                            <sap:WorkflowViewStateService.ViewState>
+                              <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                              </scg:Dictionary>
+                            </sap:WorkflowViewStateService.ViewState>
+                            <uix:NGoToUrl sap2010:Annotation.AnnotationText="해당 URL로 이동 &#xA;이전 단계에서 입력시 URL 앞부분 추가해주었음. " DisplayName="Go To URL" sap:VirtualizedContainerService.HintSize="334,126" sap2010:WorkflowViewState.IdRef="NGoToUrl_1" Url="[CurrentRow(&quot;detail_url&quot;).ToString]">
+                              <sap:WorkflowViewStateService.ViewState>
+                                <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                  <x:Boolean x:Key="IsAnnotationDocked">True</x:Boolean>
+                                </scg:Dictionary>
+                              </sap:WorkflowViewStateService.ViewState>
+                            </uix:NGoToUrl>
+                            <ui:Comment sap:VirtualizedContainerService.HintSize="334,75" sap2010:WorkflowViewState.IdRef="Comment_1" Text="// 여기에 해당 페이지가 열리면 작업하는 로직을 별로 Workflow로 만들어서 사용 " />
+                            <ui:InvokeWorkflowFile ArgumentsVariable="{x:Null}" ContinueOnError="{x:Null}" DisplayName="Invoke DummyDetail workflow" sap:VirtualizedContainerService.HintSize="334,113" sap2010:WorkflowViewState.IdRef="InvokeWorkflowFile_1" LogEntry="No" LogExit="No" UnSafe="False" WorkflowFileName="DummyDetail.xaml">
+                              <ui:InvokeWorkflowFile.Arguments>
+                                <scg:Dictionary x:TypeArguments="x:String, Argument" />
+                              </ui:InvokeWorkflowFile.Arguments>
+                            </ui:InvokeWorkflowFile>
+                          </Sequence>
+                        </ActivityAction>
+                      </ui:ForEachRow.Body>
+                    </ui:ForEachRow>
+                  </Sequence>
+                </ActivityAction>
+              </uix:NApplicationCard.Body>
+              <uix:NApplicationCard.TargetApp>
+                <uix:TargetApp Area="832, 0, 4078, 2486" BrowserType="Chrome" IconBase64="iVBORw0KGgoAAAANSUhEUgAAADAAAAAwCAYAAABXAvmHAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAAHYcAAB2HAY/l8WUAAAQ2SURBVGhD7dltiBVVHMfxXdPd1ER0ddFgw/JFCoHJ9kRgKCxBhcFyKiKRSLHCsAR16U0E+aon8kUFNWWpnBc9SRaoC1Zgm0E6WQsZEZWEFVhmT2rqPvT9d397d/Kee+/M3dkt6P7gAy67c85v5t6ZOTM21FNPPfWUJoobMR7NYv9u1G//Y4niCbgIHViNx7EVO7Bb3sI2PIk1uB4Xo0mjjHEKR7gNK/E6vsJJDKZ0CofxJu7FHIzRJxTFM9GFQ+hDqGAW/fgSD2G2ZhmlRPEC7IFNGiozEgPowVWaLedE8Vx8hNDkeerFZZo1xxROztCEo+E5jNPMOSSKp2CfBh8Ln2KGZs8hUTwJ72nwsbAf0zR7ToniDbATLTRh3jZq1hwTxS2wa35owjztxChdTqN4Fp7G7whNPhInsBltmq3GON+KW7Aeq3A1Juu3thO2trkJtlQ4jlCZLH7FLnRiomZp+HFZw0S0YyU24HZU+WScn4d3cRaDGMBx7EInihP8PVkUXwO7g3bDlgZ/oNJNzs4hO9Lf4h08gkUoHiBKNuNG7MAxDGAQfdiHy/Wn58T5JmyFFQ85gZcwV1sMp7Aztp65DsuwDlbuMdmI9ViOxbgEk7R1MZRrw7P4DVY6ZDtKtrUduBRHECqfdACLtFVuodSV+EAlK/kJC7VZIs534JRKVvM1btCWIw6FFuNzFazmLDq1aSLOL8UZFUzjMDq0dc2hzLX4QuXSsHPiDm2eiPNLcFLl0jqEwMeZLhSZh49VLK0zuFlDJOL8fPygYlnswSyNkjqUmA670oRKVvIz2jVMIs5PxYcqldUTGK+RqoYC4/Aw+hEqWUkvWjXUOXH+qUSpLH7BUo1SNRRYgqMqlNWLKLPUtitL4XofKlnNXszUSGXD5FOxU2Wysu//rRoqEOenoUeFsurDGo1UNhS4E6dVKKuDqHK+Ob8a/SqV1UFcqJFKwuR24vaoTC0e1FAV4vxs7FehrOxTWKWRSkKB21Dr0f8MczRUlTh/F06rVFbdGF69KkzehFdVJitbyN2voVLE+SnYrkJZHcMVGqkYCszHERXKqhvTNVTKON+Ob1Qqq5KjRYHlqOW6/z1qXDw6vwK1XFa34B+vCimxKVEqrT/xgIaoIYVnhEdhJ2eoaDl2T0g+pNj3/22VSssWbc9g+CGqphSWGJthT2ehsiG9aNEItgMXIM1aP+kV5PRuyPkZsK9F2vvDJ0juwGS8r2LV2JF/DTm/mSjcpTchzUPPbpyvLW0HzoMd0VDhJLtHPI8yi7WRxko5fw/sYSZUfEiXtiiGUnfDrueh4uY7rEXJPSTf2NXF+QV4AUeRLG7niR39kuUExVrwBobeMgyxZ9xtsGfiHF/oVovzE7AQ62Anub3RWItKa6FW3IcteBldsOLN+pN/KYVPJfV/EVG40ejHeuqp5/+bhoa/AMrDZxITmz0NAAAAAElFTkSuQmCC" InformativeScreenshot="cf464b925f539bc9998d64fc5d7de3a5.png" Selector="&lt;html app='chrome.exe' title='Téléphones mobiles et Smartphones désimlockés'/&gt;" Url="https://www.bouyguestelecom.fr/telephones-mobiles/telephone-portable-apple-iphone-samsung-xiaomi-oppo-huawei" />
+              </uix:NApplicationCard.TargetApp>
+            </uix:NApplicationCard>
+          </Sequence>
+        </ActivityAction>
+      </uix:NApplicationCard.Body>
+      <uix:NApplicationCard.TargetApp>
+        <uix:TargetApp Area="944, 26, 4078, 2486" BrowserType="Chrome" IconBase64="iVBORw0KGgoAAAANSUhEUgAAADAAAAAwCAYAAABXAvmHAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAAHYcAAB2HAY/l8WUAAAQ2SURBVGhD7dltiBVVHMfxXdPd1ER0ddFgw/JFCoHJ9kRgKCxBhcFyKiKRSLHCsAR16U0E+aon8kUFNWWpnBc9SRaoC1Zgm0E6WQsZEZWEFVhmT2rqPvT9d397d/Kee+/M3dkt6P7gAy67c85v5t6ZOTM21FNPPfWUJoobMR7NYv9u1G//Y4niCbgIHViNx7EVO7Bb3sI2PIk1uB4Xo0mjjHEKR7gNK/E6vsJJDKZ0CofxJu7FHIzRJxTFM9GFQ+hDqGAW/fgSD2G2ZhmlRPEC7IFNGiozEgPowVWaLedE8Vx8hNDkeerFZZo1xxROztCEo+E5jNPMOSSKp2CfBh8Ln2KGZs8hUTwJ72nwsbAf0zR7ToniDbATLTRh3jZq1hwTxS2wa35owjztxChdTqN4Fp7G7whNPhInsBltmq3GON+KW7Aeq3A1Juu3thO2trkJtlQ4jlCZLH7FLnRiomZp+HFZw0S0YyU24HZU+WScn4d3cRaDGMBx7EInihP8PVkUXwO7g3bDlgZ/oNJNzs4hO9Lf4h08gkUoHiBKNuNG7MAxDGAQfdiHy/Wn58T5JmyFFQ85gZcwV1sMp7Aztp65DsuwDlbuMdmI9ViOxbgEk7R1MZRrw7P4DVY6ZDtKtrUduBRHECqfdACLtFVuodSV+EAlK/kJC7VZIs534JRKVvM1btCWIw6FFuNzFazmLDq1aSLOL8UZFUzjMDq0dc2hzLX4QuXSsHPiDm2eiPNLcFLl0jqEwMeZLhSZh49VLK0zuFlDJOL8fPygYlnswSyNkjqUmA670oRKVvIz2jVMIs5PxYcqldUTGK+RqoYC4/Aw+hEqWUkvWjXUOXH+qUSpLH7BUo1SNRRYgqMqlNWLKLPUtitL4XofKlnNXszUSGXD5FOxU2Wysu//rRoqEOenoUeFsurDGo1UNhS4E6dVKKuDqHK+Ob8a/SqV1UFcqJFKwuR24vaoTC0e1FAV4vxs7FehrOxTWKWRSkKB21Dr0f8MczRUlTh/F06rVFbdGF69KkzehFdVJitbyN2voVLE+SnYrkJZHcMVGqkYCszHERXKqhvTNVTKON+Ob1Qqq5KjRYHlqOW6/z1qXDw6vwK1XFa34B+vCimxKVEqrT/xgIaoIYVnhEdhJ2eoaDl2T0g+pNj3/22VSssWbc9g+CGqphSWGJthT2ehsiG9aNEItgMXIM1aP+kV5PRuyPkZsK9F2vvDJ0juwGS8r2LV2JF/DTm/mSjcpTchzUPPbpyvLW0HzoMd0VDhJLtHPI8yi7WRxko5fw/sYSZUfEiXtiiGUnfDrueh4uY7rEXJPSTf2NXF+QV4AUeRLG7niR39kuUExVrwBobeMgyxZ9xtsGfiHF/oVovzE7AQ62Anub3RWItKa6FW3IcteBldsOLN+pN/KYVPJfV/EVG40ejHeuqp5/+bhoa/AMrDZxITmz0NAAAAAElFTkSuQmCC" InformativeScreenshot="b5322ce6d881abd996131aa3f6768cd7.png" Selector="&lt;html app='chrome.exe' title='Téléphones mobiles et Smartphones désimlockés'/&gt;" Url="https://www.bouyguestelecom.fr/telephones-mobiles/telephone-portable-apple-iphone-samsung-xiaomi-oppo-huawei" />
+      </uix:NApplicationCard.TargetApp>
+    </uix:NApplicationCard>
+  </Sequence>
+</Activity>
